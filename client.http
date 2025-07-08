@@ -9,3 +9,15 @@ GET {{baseUrl}}/health
 
 # HTTP request to get all rooms
 GET {{baseUrl}}/rooms
+
+###
+
+#HTTP create a new room
+POST {{baseUrl}}/rooms
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "New Room via HTTP",
+    "description": "This is a new room created via HTTP request"
+}
